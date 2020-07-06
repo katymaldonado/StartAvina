@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*HEADER*/
+header{
+    background-image: url("../img/design1_image1.jpg");
+    height: 60vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /*border: 2px solid black;*/   
+    position: relative;
+    margin-bottom: 10px;
+    
+    
+}
+/*TITULO*/
+h1{
+    text-align: left;
+     
+}
+/*SUBTITULO*/
+header>h2{
+    
+    text-align: center;
+    /*border: 2px solid black;*/
+    padding: 1px;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+/*LOGO*/
+img[id="logo1"]{
+    
+    height: 150px;
+    width: 150px;
+    /*border: 2px solid red;*/
+    border-radius: 50%;
+    position: absolute;
+    top: 290px;
+    right: 170px;
+}
+/*NAV*/
+nav{
+    display: block;
+    width: 20vw;
+    padding: 20px ;
+    float: left;
+    /*border: 2px solid black;*/
+
+}
+
+nav>a{
+    display: block;
+    margin: 40px ;
+    padding: 20px;
+    
+}
+
+
+/*MAIN*/
+main{
+    margin-top: 30px;
+    padding: 40px ;
+    width: 60vw;
+    float:left;
+    /*border: 2px solid black;*/
+}
+
+main>p{
+    padding: 20px;
+}
+/*TITULOS DE INDEX*/
+h3{
+    font-style: oblique;
+}
+
+/*TITULOS DE ABOUT*/
+#main_about>h3{
+    font-size: 24px;
+    font-style: normal;
+}
+
+
+/*FONTS PARA NAV*/
+#home{
+    font-weight: bold;
+}
+
+#about{
+    font-weight: bold;
+}
+
+#contact{
+    font-weight: bold;
+}
+
