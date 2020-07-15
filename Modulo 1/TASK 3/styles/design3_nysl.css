@@ -59,30 +59,32 @@ nav{
     padding: 10px ;
     position: absolute;
     top: 0px;
-    left: 15%;
+    text-align: center;
+    left: 10%;
      
 }
 nav>a{
     display: inline-block;
-    margin: 0px 30px ;
+    margin: 0px 20px ;
     padding: 7px;
     color: var(--color1);
     font-family: "Segoe UI";
     text-decoration: none;
     border: 3px solid var(--color1);
     font-weight: bold;
+    
 }
 .active{
     border:3px solid var(--color2);
     color:var(--color2);
  }
 
- /*MAIN*/
     /*MAIN INDEX*/
 main>section{
     margin-top: 30px;
     margin-left: 40px;
     padding: 30px ;
+    padding-bottom: 0;
     width: 40vw;
     float:right;
 
@@ -90,7 +92,7 @@ main>section{
 
 /*FONTS DE P DE MAIN*/
 main p{
-   margin-bottom: 50px;
+   margin-bottom: 40px;
    font-family: "Segoe UI";
    font-size: 12pt;
 }
@@ -123,7 +125,7 @@ h3{
 /*IMAGEN DE ABOUT*/
 img[id="about1"]{
     float: right;
-    height: 110vh;
+    height: 100vh;
     width: 45%;
 }
 
@@ -133,7 +135,7 @@ img[id="about1"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    margin: 40px;
 }
 #gallery>.grid-container{
     display: grid;
@@ -167,17 +169,17 @@ img[id="about1"]{
     grid-column: span 2;
 }
 
+/* RULES MAIN */
 #rules_main{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: start;
-    width: 60%;
-    padding: 0 20vw;
+    width: 60vw;
+    margin: 5vw 20vw;
     
 }
-
 #rules_main p{
     margin-bottom: 0px;
 }
@@ -199,21 +201,17 @@ ol.c{
     flex-direction: column;
     align-items: center;
     text-align: start;
-    width: 60%;
-    padding: 0 20vw;
-    
+    width: 60vw;
+    margin: 5vw 20vw;
 
 }
-
-
 
 /* TABLAS*/
 table{
-    text-align: start;
-    width: 60vw;
-    
+   text-align: start;
+   width: 100% ;
+   
 }
-
 caption>h3{
     font-family: "Segoe UI" ;
     font-style: oblique;
@@ -223,7 +221,6 @@ caption>h3{
     text-decoration: none;
 
 }
-
 #table1>caption>p{
   
     text-align: start;
@@ -231,7 +228,6 @@ caption>h3{
     text-decoration: underline;
    
 }
-
 th{
     font-family: "Segoe UI";
     font-size: 14pt;
@@ -242,26 +238,31 @@ td{
     font-family: "Segoe UI";
     font-size: 12pt;
     text-align: start;
-    vertical-align: text-top;
     
 }
-
-#table3>caption {
-     padding: 0;
-    text-align: start;
-    font-weight: bold;
+#table3{
+    border-collapse: collapse;
+    width: 100%;
+    
 }
-
-
+#table3 th,#table3 td{
+    border: 1px solid black;
+    text-align: center;
+}
+iframe{
+    width: 300px;
+}
 #table4{
-    width: 60vw;
+    width: 100%;
     text-align: start;
     margin-bottom: 40px;
 }
-#table4>caption {
+#table4 th {
     padding: 20px;
+   font-size: 12pt;
    text-align: start;
- 
+   text-decoration: none;
+   font-weight: normal;
 }
 
 .lista{
@@ -271,4 +272,72 @@ td{
 }
 #schedule_main p{
     margin-bottom: 0px;
+}
+
+/* FORM MAIN */
+#form_main{
+    margin-top: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    width: 60vw;
+    margin: 5vw 20vw;
+    font-family: "Segoe UI";
+    font-size: 12pt;
+}
+input{
+    border:0;
+    border-bottom: 1px solid black;
+    margin:5px 3px;
+}
+#address{
+    width: 80%;
+}
+#city{
+    width: 50%;
+}
+#parent{
+    width: 78%;
+}
+#mail{
+    width: 32%;
+}
+input[type=date]{
+    margin-right: 20px;
+}
+#other>label{
+    margin: 10px;
+}
+dd{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+input[type=checkbox]{
+    margin-right: 60px;
+}
+legend{
+    font-weight: bold;
+}
+.text_form{
+    font-family: "Segoe UI";
+    font-size: 10pt;   
+    margin-left: 0;
+}
+.text_form>dt{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.text_form>dd{
+   margin-left: 0;
+}
+.info_end{
+    font-family: "Segoe UI";
+    font-size: 11pt;
+}
+#parent_end{
+    font-size: 8pt; 
+    width: 48%;
 }
