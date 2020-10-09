@@ -23,21 +23,22 @@ header>h1{
     color:white;
     font-family: "Segoe UI";
     font-size: 48pt;
-    top:150px;
-    left:265px;
-    
+    top:200px;
+    right: 50px;
+    text-align: center;
 }
 /*SUBTITULO*/
-header>h2{
+#t2{
       text-align: center;
       padding: 2px 0px;
       background-color: var(--color2);
       color: var(--color1);
       font-family: "Segoe UI";
-      width: 99%;
+      width: 100%;
       display: block;
-      position: absolute;
-      bottom:0px;
+      margin: 0;
+      
+      
     
   }
   /*LOGO*/
@@ -48,8 +49,8 @@ header>h2{
     border-radius: 50%;
     position: absolute;
     margin: 10px;
-    top: 100px;
-    left: 50px  ;
+    top: 190px;
+    left: 150px  ;
     
 }
 
@@ -125,17 +126,18 @@ h3{
 /*IMAGEN DE ABOUT*/
 img[id="about1"]{
     float: right;
-    height: 100vh;
+    height: 70vh;
     width: 45%;
 }
 
 /*GALERIA*/
 #gallery{
     height: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin-top: 40px;
 }
 #gallery>.grid-container{
     display: grid;
@@ -340,4 +342,264 @@ legend{
 #parent_end{
     font-size: 8pt; 
     width: 48%;
+}
+
+/* Media-Queries */
+
+@media screen and (min-width: 1920px){
+    header>h1{
+        font-size: 54pt;
+        top:220px;
+        right:100px;
+        text-align: center;
+    }
+
+    img[id="logo1"]{
+        
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        top: 220px;
+        left: 60px  ;
+        
+    }
+}
+
+@media screen and (max-width: 1280px){
+    header>h1{
+        font-size: 54pt;
+        top:200px;
+        left:250px;
+        text-align: center;
+    }
+
+    img[id="logo1"]{
+        
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        top: 220px;
+        left: 60px  ;
+        
+    }
+
+    img[id="image_index"], img[ id="contact1"]{
+        height: 40vh;
+        width: 45%;
+       
+    }
+    #info_about{
+        margin-top: 0px;
+        margin-left: 10px;
+        padding: 0px;
+        padding-left: 8px;
+        width: 38vw;
+      
+    }
+    
+    /*IMAGEN DE ABOUT*/
+    img[id="about1"]{
+        float: right;
+        height: 60vh;
+        width: 50vw;
+    }
+    header{
+   
+        height: 50vh; 
+        width: 100%;
+        
+        background-position: center;  
+        margin-top: 140px;
+        
+        
+        
+    }
+
+    nav>a{
+
+       
+        margin: 0px 40px ;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    
+    header>h1{
+        font-size: 35pt;
+        top: 250px;
+      }
+    img[id="logo1"]{
+        
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+        top: 280px;
+        left: 60px  ;
+        
+    }
+    main>section{
+        padding-left: 0px;
+        margin-left: 10px;
+         }
+
+    img[id="image_index"], img[ id="contact1"]{
+        height: 40vh;
+        width: 50%;
+        
+    }
+    #contact2>section{
+        margin: 0;
+        padding-left: 10px;
+        
+
+    }
+    main p{
+        font-size: 10pt;
+     }
+     h3{
+        font-size:  14pt;
+     }       
+     main>section{
+        margin-top: 5px;
+        margin-left: 10px;
+        /* padding: 10px ; */
+        /* width: 30vw; */
+    
+    }
+        
+#gallery>.grid-container{
+    display: grid;
+    grid-template-areas: none;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(3,140px);
+    grid-gap: 10px;
+}
+header{
+   
+    height: 40vh; 
+    width: 100%;
+    
+    background-position: top;  
+    margin-top: 140px;
+    
+
+}
+
+nav>a{
+
+       
+    margin: 0px 20px ;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav{
+    width: 95vw;
+    left: 0px;
+     
+}
+
+}
+@media screen and (max-width: 480px){
+    header>h1{
+        font-size: 30pt;
+        top:200px;
+        left:60px;
+        text-align: center;
+    }   
+    img[id="logo1"]{
+        
+        height: 120px;
+        width: 120px;
+        margin: 10px;
+        top: 450px;
+        left: 35vw  ;
+        
+    }
+    main>section{
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px ;
+        padding-bottom: 0;
+        width: 80vw;
+        float:right;
+    
+    }
+    
+    
+    img[id="image_index"], img[ id="contact1"]{
+        text-align: center;
+        width: 100vw;
+        height: 400px;
+    }
+    #info_about{
+
+        width: 85vw;
+        float:center;
+        align-items: center;
+        text-align: center;
+    }
+   
+    /*IMAGEN DE ABOUT*/
+    img[id="about1"]{
+        text-align: center;
+        position: relative;
+        width: 97vw;
+        height: 400px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        float: none;
+    }
+    #gallery>.grid-container{
+        grid-template-columns: repeat(4,60px);
+        grid-template-rows: repeat(3,100px);
+     }
+    #contact2{
+        width: 87vw;
+        float:center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        
+
+    }
+    img[id="contact1"]{
+        text-align: center;
+        position: relative;
+        width: 97vw;
+        height: 400px;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        float: none;
+     }
+     header{
+   
+        height: 45vh; 
+        width: 100%;
+        background-position: top;  
+        margin-top: 160px;
+        
+        
+        
+    }
+    nav>a{
+    
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    
+    nav{
+        width: 90vw;
+        left: 0px;
+         
+    }
+    
+    
 }
